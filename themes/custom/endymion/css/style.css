@@ -107,3 +107,11 @@ body {
 }
 
 /* end _homepage.scss  */
+
+/* _globals.scss  */
+.director strong, .actors strong{
+  font-weight: bold;
+  font-size: 24px;
+  color: green;
+}
+
