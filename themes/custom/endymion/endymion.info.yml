@@ -14,5 +14,6 @@ regions:
     header: 'Header'
     footer: 'Footer'
     sidebar: 'Sidebar'
+    main_navigation: 'Main Navigation'
     
 
