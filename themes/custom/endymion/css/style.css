@@ -36,3 +36,7 @@ body {
   /* background-color: lightgreen; */
 }
 /* STYLE */
+.container {
+  width: 1100px;
+  margin: 0 100px;
+}
