@@ -87,3 +87,23 @@ body {
   color: white;
 
 }
+
+/* end for _header.scss */
+
+/* _homepage.scss  */
+.article-list h3 a{
+  color: darkgray;
+  text-decoration: none;
+}
+.article-list p{
+  line-height: 1.5;
+}
+.article-list .views-row{
+  margin: 40px 0;
+}
+.article-list .views-field-view-node a{
+  color: red;
+  text-decoration: none;
+}
+
+/* end _homepage.scss  */
