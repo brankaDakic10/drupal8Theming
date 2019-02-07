@@ -1,7 +1,25 @@
+{{ kint(content.field_actors['#items'].getValue())}}
+{# {{ content.field_actors['#items'].getValue() |first.value}} #}
+
+{# {{ content.field_actors['#items'].getValue() |last.value}} #}
+
+{# {{ kint (content.field_show_poster_['#items'].getValue()) }} #}
+
+ {# to show all item values in variable-field_actors #}
+{# {% for actor in content.field_actors['#items'].getValue() %}  
+    {{actor.value}}<br>
+{% endfor %} #}
+
+{% if content.field_show_poster_['#items'].getValue()|first.value == "1"  %}
 <div class="movie_poster">
 {{content.field_movie_poster}}
 </div>
-<br>
+{% else %}
+<div>
+ <h3>I don't want you to see Movie poster</h3>
+ </div>
+{% endif %}
+
 <br>
 <div class="director">
 {{content.field_director}}
