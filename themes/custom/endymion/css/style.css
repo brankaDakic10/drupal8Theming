@@ -102,7 +102,7 @@ body {
   margin: 40px 0;
 }
 .article-list .views-field-view-node a{
-  color: red;
+  /* color: red; */
   text-decoration: none;
 }
 
