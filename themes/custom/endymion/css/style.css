@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -35,6 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* background-color: lightgreen; */
 }
+
 /* STYLE */
 .container {
   width: 1100px;
@@ -66,13 +68,16 @@ body {
 
 
 .main-navigation ul {
-   list-style-type: none;
-   font-size: 1.4rem;
+  list-style-type: none;
+  font-size: 1.4rem;
 }
 
 .main-navigation li {
   float: left;
+  /* added for submenu */
+  position: relative;
 }
+
 /* main nav first level */
 .main-navigation li a {
   display: block;
@@ -88,20 +93,58 @@ body {
 
 }
 
+
+/* added style for submenu */
+.main-navigation ul ul {
+  display: none;
+  /* add for submenu */
+  position: absolute;
+  width: 200px;
+  background: #fff;
+}
+
+/* add for submenu */
+.main-navigation ul ul li {
+  float: none;
+
+}
+
+/* add for submenu */
+.main-navigation ul ul li a {
+  color: rgb(75, 146, 170);
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #efefef;
+}
+
+/* add for submenu */
+.main-navigation ul ul li a:hover {
+  text-decoration: none;
+  background: rgb(82, 162, 189);
+  color: white;
+}
+
+
+
+
+
 /* end for _header.scss */
 
 /* _homepage.scss  */
-.article-list h3 a{
+.article-list h3 a {
   color: darkgray;
   text-decoration: none;
 }
-.article-list p{
+
+.article-list p {
   line-height: 1.5;
 }
-.article-list .views-row{
+
+.article-list .views-row {
   margin: 40px 0;
 }
-.article-list .views-field-view-node a{
+
+.article-list .views-field-view-node a {
   /* color: red; */
   text-decoration: none;
 }
@@ -109,37 +152,39 @@ body {
 /* end _homepage.scss  */
 
 /* _globals.scss  */
-.director strong, .actors strong{
+.director strong,
+.actors strong {
   font-weight: bold;
   font-size: 24px;
   color: green;
 }
 
-.description{
+.description {
   background-color: lightgray;
   padding: 20px;
- 
+
 }
 
-.premiere-content{
+.premiere-content {
   padding: 10px;
   background-color: lightskyblue;
 }
 
-.actor-content{
+.actor-content {
   padding: 15px;
   background-color: rgb(138, 197, 60);
 }
 
 
 /* _footer.scss style */
-.main-footer{
+.main-footer {
   background: rgb(71, 82, 82);
   padding: 40px 0;
   margin-top: 60px;
   color: white;
 }
-.footer-info{
+
+.footer-info {
   text-align: center;
   color: rgb(138, 197, 60);
 
