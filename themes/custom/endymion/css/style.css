@@ -125,3 +125,8 @@ body {
   padding: 10px;
   background-color: lightskyblue;
 }
+
+.actor-content{
+  padding: 15px;
+  background-color: rgb(138, 197, 60);
+}
